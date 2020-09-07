@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca4fb61032.js" crossorigin="anonymous"></script>
+    <style media="screen">
+        .loader{
+            background-color: #000000;
+            top : 0;
+            left: 0;
+            width : 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader.hidden {
+            animation: fadeOut 1.8s;
+            animation-fill-mode: forwards;
+        }
+         .fade-in{
+            opacity: 0;
+            transition: opacity 369ms ease-in;
+        }
+
+        .fade-in.appear {
+            opacity: 1;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <img src="./img/35.gif" alt="Loading..." class="">
+    </div>
+    <header>
+        <div class="container-fluid header m-auto row p-0">
+            <div class="col-sm-12 col-lg-2 col-md-3 logo-div">
+                <a href="#"><img src="./img/logo_size.jpg" class="my-3" alt=""></a>
+            </div>
+            <div class=" col-sm-12 col-lg-4 col-md-2 mid">
+            </div>
+            <div class="col-sm-12 col-lg-5 col-md-7 py-4 ">
+                <ul class="nav right">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-fluid intro">
+            <h1 class='intro-text'>your go to E-library</h1>
+            <h3 class='motto'>your go to E-library...</h3>
+            <button type="button" class="btn btn-primary btn-sm">Read Online</button>
+        </section>
+        <div class="container text-center bg-white pt-2">
+            <div class="row container my-5">
+                
+                <div class="col-lg-4 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./img/ibook2.png" alt="">
+                        </div>
+                        <div class="col-12">
+                            <h3 class='custom-text'>Read Online</h3>
+                            <p>Read available books in your own library shelves online</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./img/download.png" alt="">
+                        </div>
+                        <div class="col-12">
+                            <h3 class='custom-text'>Download E-books</h3>
+                            <p>Download e-books and other learning resources for free</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./img/help.png"alt="">
+                        </div>
+                        <div class="col-12">
+                            <h3 class="custom-text">Get Help</h3>
+                            <p>Reaching out for support is the first step to getting better</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 bg-light">
+            <div class="row">
+               <div class="col-md-4 col-lg-3 col-sm-12 text-center px-3">
+                <!--nav class="navbar navbar-light bg-light my-5"-->
+                    <form class="form-inline my-4">
+                      <div class="input-group col-11 mx-auto">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-dark"><i class="fas fa-search text-white"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  <!--/nav-->
+                  <h6 class="text-center bold">Categories</h6>
+                  <div class="my-3 row d-flex justify-content-center">
+                    <span class="col-3 border m-2" style="background-color: #D9D9D9;">PHP</span>
+                    <span class="col-6 border m-2" style="background-color: #D9D9D9;">JAVASCRIPT</span>
+                    <span class="col-3 border m-2" style="background-color: #D9D9D9;">C#</span>
+                    <span class="col-3 border m-2" style="background-color: #D9D9D9;">GO</span>
+                    <span class="col-4 border m-2" style="background-color: #D9D9D9;">RUST</span>
+                    <span class="col-4 border m-2" style="background-color: #D9D9D9;">PYTHON</span>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-12 col-lg-9">
+                <div class="container text-center">
+                    <h3 class="my-4" style="font-size: 39.1px;color: #495057;">E-Books</h3>
+                    <div class="container-fluid">
+                        <div class="row ele">
+                            <div class="col-sm-12 col-lg-4 col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;">
+                                    <img class="card-img-top img-thumbnail" src="./img/369.jpg" alt="Card image cap">
+                                    <div class="card-body  px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: Java EE</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: unknown</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating:</h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;">
+                                    <img class="card-img-top img-thumbnail" src="./img/639.jpg" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: C++ for beginner</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: Mike Spencer</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating: <img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""></h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;">
+                                    <img class="card-img-top img-thumbnail" src="./img/693.jpg" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: Vue JS framework</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: John Doe</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating:<img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""></h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4  col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;" >
+                                    <img class="card-img-top img-thumbnail" src="./img/123.jpg" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: SQL Databse</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: unknown</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating: <img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""></h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;">
+                                    <img class="card-img-top img-thumbnail" src="./img/345.jpg" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: Python</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: David Bird</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating:<img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""><img src="./img/star.png" alt=""></h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                            <div class="col-sm-12 col-lg-4 col-md-6 my-3">
+                                <div class="card fade-in mx-auto col-12" style="width: 21rem;" >
+                                    <img class="card-img-top img-thumbnail" src="./img/678.jpg" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <h5 class="card-title text-left text-dark title">Title: Advance level C#</h5>
+                                      <h5 class="card-title text-left text-dark title">Author: Patrick Shattam</h5>
+                                      <h5 class="card-title text-left text-dark title">Rating: <img src="./img/star.png" alt=""><img src="./img/star.png" alt=""></h5>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                        </div>
+                    </div>
+                </div>
+               </div> 
+            </div>
+        </div>
+    </main>
+    <div class="container"></div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid my-4">
+            <div class="row">
+                <div class="col-lg-3 col-4 col-md-2 ">
+                    <img src="./img/logo_size_invert.jpg" alt="">
+                    <p></p>
+                </div>
+                <div class="col-lg-4 col-7 col-md-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <h4 class='foot-head'>Menu</h4>
+                            <ul class="liste-unstyled  pl-0">
+                                <li><a href="#" class="text-white d-block">.Lib</a></li>
+                                <li><a href="#" class="text-white d-block">About</a></li>
+                                <li><a href="#" class="text-white d-block">Blog</a></li>
+                                <li><a href="#" class="text-white d-block">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-8">
+                            <h4 class='foot-head'>Help</h4>
+                            <div class="d-flex">
+                                <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                                  <li><a href="#" class="text-white d-block">Shipping Information</a></li>
+                                  <li><a href="#" class="text-white d-block">Returns &amp; Exchange</a></li>
+                                  <li><a href="#" class="text-white d-block">Terms &amp; Conditions</a></li>
+                                  <li><a href="#" class="text-white d-block">Privacy Policy</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                  <li><a href="#" class="text-white d-block">FAQs</a></li>
+                                  <li><a href="#" class="text-white d-block">Contact</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5 col-12 col-md-4  py-5">
+                    <input class="form-control col-8 mx-auto" type="text" placeholder="Email">
+                    <button type="button" class="btn btn-primary btn-lg btn-block col-6 mx-auto my-2 rounded-pill">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end of footer-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

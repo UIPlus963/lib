@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Oswald&display=swap');
+
+body, html {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: black;
+
+	height: 100%;
+	background-color: black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.navbar-toggler{
+    float: right;
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    color : white;
+}
+.text-left h1{
+	margin-left: 20px;
+}
+
+#grad {
+    height: 200px;
+    background-image: linear-gradient(to left, white , black);
+}
+.header{
+	background-color: #070807;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+.header a{
+	color : white;
+}
+.col-12 i{
+	font-size: 2.7em;
+	color: white;
+}
+.title{
+	font-size: 14px !important;
+	font-weight: bold;
+}
+.nav-scrolled {
+	--text: #333;
+	--text-inverse: #f4f4f4;
+	--background: #f4f4f4;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+  .intro {
+	padding: 50vh 0;
+	background: #123 url(img/burger.jpg);
+	background-size: cover;
+	background-blend-mode: multiply;
+	color: white;
+	text-align: center;
+  }
+ a img{
+	 width : 90px;
+	 height: 69px;
+ }
+ 
+.intro-text{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+}
+.motto{
+	font-family: 'Lobster', cursive;
+	font-size: large;
+}
+.foot-head{
+	color: #868E96;
+	font-size: large;
+	font-weight: bold;
+}
+.card > img {
+	height: 240px;
+}
+footer{
+	background-color: black;
+}
+.wrap-icon > i{
+	color: #212529;
+	width: 100px;
+	height: 100px;
+}
+.custom-text{
+	font-size: 22px;
+}
+p{
+	font-size: 16px;
+}
+.bold{
+	font-weight: bold;
+}
+
