@@ -91,28 +91,4 @@ window.addEventListener("load",function(){
       sectionOneOptions);
       
       sectionOneObserver.observe(intro);
-
-      let width = 205
-      let id = 0
-      let zoomLen = 2
-      const card = document.querySelectorAll('.card')
-      
-      let zoomin = ()=>{
-        for(let element of card){
-          if(width < 205){
-            width = width + zoomLen
-            element.style.width = width
-          }else{
-            clearInterval(id)
-          }
-        }
-      }
-      let increase = ()=>{
-        id = setInterval(zoomin,20)
-      }
-      for(let element of card){
-        element.addEventListener('mouseover',()=>{
-          increase()
-        })
-      }
 })
